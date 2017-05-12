@@ -1,4 +1,7 @@
+//      ------------------------------------------------ [ALGORITHMS] ------------------------------------------------ 
+
 //--[Reverse a String]--
+
 function reverseString(string) {
   const reverse = [];
   let counter = 0;
@@ -15,7 +18,9 @@ function reverseString(string) {
 reverseString("apple");
 
 
+
 //--[Recursion]--
+
 var recursiveFunc = (n) => {
   let result;
   if(n == 1)
@@ -26,7 +31,8 @@ var recursiveFunc = (n) => {
 recursiveFunc(8);
 
 
-//--[Bubble Sort]--
+
+//--[Bubble sorting algorithm]--
 var ranNums = [99, -10, 100123, 18, -978, 5623, 463, -9, 287, 49];
 function bubbleSort(arrayOfNumbers){
   let placeholder;
@@ -48,7 +54,9 @@ function bubbleSort(arrayOfNumbers){
 bubbleSort(ranNums);
 
 
+
 //--[Palindrome]--
+
 function palindrome(str) {
   var alphaNum = "abcdefghijklmnopqrstuvwxyz0123456789";
   var newString = "";
@@ -72,11 +80,11 @@ function palindrome(str) {
     return false;
   }
 }
-
 palindrome("_eye");
 
 
-//--[Biggest Word In String]--
+
+//--[Return biggest Word In String]--
 function findLongestWord(str) {
   var biggestWord = "";
   var biggestWordLength = 0;
@@ -89,11 +97,12 @@ function findLongestWord(str) {
   }
   return biggestWordLength;
 }
-
 findLongestWord("The quick brown fox jumped over the lazy dog");
 
 
-//--[Capitalize first letter of each word in a string UPGRADED]--
+
+//--[Capitalize first letter of each word in a string(Orignal code optimized!)]--
+
 function titleCase(str) {
   str = str.toLowerCase().split(" ");
   for(var i=0; i < str.length; i++) {
@@ -105,7 +114,9 @@ function titleCase(str) {
 titleCase("sHoRt AnD sToUt");
 
 
+
 //--[Return largest number in each array]--
+
 function largestOfFour(array) {
   var lrg = [];
   for (var i=0; i < array.length; i++) {
@@ -121,6 +132,8 @@ function largestOfFour(array) {
 }
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
+
+//--[Does string contain traget string?]--
 
 function confirmEnding(str, target) {
   var verdict = false;
@@ -139,7 +152,10 @@ function confirmEnding(str, target) {
   return verdict;
 }
 
+
+
 //--[Repeat a string specified number of times]--
+
 function repeatStringNumTimes(str, num) {
   var multiplier;
   if(num >= 1) {
@@ -154,20 +170,9 @@ function repeatStringNumTimes(str, num) {
 repeatStringNumTimes("abc", -2);
 
 
-//
-function chunkArrayInGroups(arr, size) {
-  var final = [];
-  var storage = [];
-  var counter = 0;
-  for(var i=0; i < arr.length; i++) {
 
-  }
-  return true;
-}
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+//Return specified remaining array elements
 
-
-//Return remaining array elements
 function slasher(arr, howMany){
   if(arr.length !== arr.length - howMany){
     arr.splice(0, howMany);
